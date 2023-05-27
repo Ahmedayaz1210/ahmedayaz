@@ -1,0 +1,124 @@
+/* sidebar section */
+body.no-scroll {
+  overflow: hidden;
+}
+.wrapper .sidebar{
+    background: #323232;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+    z-index: 9;
+    transform: translateX(-225px);
+    transition: transform 0.3s;
+  }
+  .sidebar--open .wrapper .sidebar{
+    transform: translateX(0);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  .wrapper .sidebar .profile{
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .wrapper .sidebar .profile .sidebar_pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .wrapper .sidebar .profile .sidebar_pic img {
+    display: block;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+  .wrapper .sidebar .profile h3{
+    color: #DDD0C8;
+    margin: 10px 0 5px;
+  }
+  .wrapper .sidebar .profile p{
+    margin-top: 10px;
+    color:#DDD0C8;
+    font-size: 14px;
+  }
+  .wrapper .sidebar .sections ul li a{
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid #DDD0C8;
+    color: #DDD0C8;
+    font-size: 16px;
+    position: relative;
+  }
+  .wrapper .sidebar ul li a .icon{
+    color: #DDD0C8;
+    width: 30px;
+    display: inline-block;
+  }
+  .wrapper .sidebar ul li a:hover,
+  .wrapper .sidebar ul li a.active{
+    
+    background: rgb(255, 255, 255);
+    border-right: 2px solid #DDD0C8;
+  } 
+
+  .wrapper .sidebar ul li a:hover::before,
+  .wrapper .sidebar ul li a.active::before{
+    display: block;
+  }
+  .sidelist{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'open sans', sans-serif;
+    background: transform 0.2s;
+  }
+  a{
+    text-decoration: none;
+  }
+  .nav__overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    visibility: hidden;
+    transition: opacity 0.3s;
+    opacity: 0;
+    z-index: 8;
+  }
+  
+  .sidebar--open .nav__overlay{
+    visibility: visible;
+    opacity: 1;
+  }
+  .preload * {
+    transition: none !important;
+  }
+  .wrapper .sidebar .profile ul.social-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .wrapper .sidebar .profile ul.social-links li {
+    margin: 10px;
+    
+  }
+  
+  .wrapper .sidebar .profile ul.social-links li a {
+    color: #DDD0C8;
+    font-size: 30px;
+    
+  }
+ 
