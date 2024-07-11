@@ -1,93 +1,15 @@
-.skills{
-    position: relative;
-    display: flex;
-    padding-left: 200px;
-    flex-wrap: wrap;
-    gap: 40px;
-    margin-top: 50px;
-
-}
-.skills .progress{
-    position: relative;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: #222 linear-gradient(to right, transparent 50%, var(--clr) 0);
-    overflow: hidden; /* Add this line to hide overflow */
-}
-
-.skills .progress h3{
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: #373636;
-    font-size: 2em;
-    z-index: 1;
-    font-weight: 200px;
-}
-.skills .progress h3 span{
-    font-size: 1em;
-    font-weight: 200;
-    color: #373636;
-}
-.skills .progress h4{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-    
-    font-size: 15px;
-    color: var(--clr);
-    text-transform: uppercase;
-}
-.skills .progress::before{
-    content: '';
-    display: block;
-    height: 100%;
-    margin-left: -50%; /* Adjust the margin-left value */
-    margin-left: 50%;
-    transform-origin: left;
-    border-radius: 0 100% 100%;
-    
-}
-.skills .progress::after{
-    content: '';
-    position: absolute;
-    inset: 10px;
-    border-radius: 50%;
-    background: #DDD0C8;
-}
-.skills .progress::before{
-    background: var(--clr);
-    transform: rotate(calc(((var(--i) - 50) * 0.01turn)));
-}
-.skills .progress.less::before{
-    background: #222;
-    transform: rotate(calc(((var(--i) - 0) * 0.01turn)));
-}
-@media (max-width: 992px) {
-    .skills {
-        padding-left: 0;
-        justify-content: center;
+.skills_paragraph{
+    margin-top: 60px;
+    color: #474747;
+    font-family: 'Nunito', cursive;
+    font-size: 1rem;
+    margin-left: 300px;
+    line-height: 40px;
+    @media (max-width: 992px) {
+        margin: 0px;
     }
-
-    .skills .progress {
-        width: 75px;
-        height: 75px;
-    }
-
-    .skills .progress h3 {
-        top: 20%;
-        font-size: 1em;
-    }
-
-    .skills .progress h3 span {
-        font-size: 1em;
-    }
-
-    .skills .progress h4 {
-        font-size: 10px;
-    }
-}
+  }
+  
+  #skill_title{
+    font-size: 1.5rem;
+  }

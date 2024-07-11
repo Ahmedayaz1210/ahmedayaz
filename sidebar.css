@@ -13,6 +13,7 @@ body.no-scroll {
     transition: all 0.5s ease;
     z-index: 9;
     transform: translateX(-225px);
+    overflow-y: auto;
     transition: transform 0.3s;
   }
   .sidebar--open .wrapper .sidebar{
@@ -75,6 +76,7 @@ body.no-scroll {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    margin-top: -20px;
     font-family: 'open sans', sans-serif;
     background: transform 0.2s;
   }
