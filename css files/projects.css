@@ -36,10 +36,8 @@
     transform: scale(1.05); /* Slightly scale up on hover */
   }
 .project_fab{
-  padding-left: 13px;
-  @media (max-width: 992px) {
-    padding-left: 10px
-  }
+  padding-left: 4px;
+  
 }
   .project a{
     color: #474747;
