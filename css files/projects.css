@@ -9,6 +9,11 @@
       margin-bottom: 50px
   }
 }
+
+.tech_stack{
+  font-size: 0.8rem;
+}
+
 .project_contents{
     color: #474747;
     font-family: 'Nunito', cursive;
@@ -48,8 +53,4 @@
     margin-top: 80px;
     width: 50%;
     margin-bottom: 100px;
-}
-
-.tech_stack{
-    font-size: 0.8rem;
 }
